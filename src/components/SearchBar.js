@@ -3,10 +3,12 @@ export default {
 
   methods: {
     handleFilterTextInput (e) {
-      this.filterTextInput(e.target.value)
+      // this.filterTextInput(e.target.value)
+      this.$emit('onFilterTextInput', e.target.value)
     },
     handleInStockChange (e) {
-      this.inStockChange(e.target.checked)
+      // this.inStockChange(e.target.checked)
+      this.$emit('onIsStockChange', e.target.checked)
     }
   },
   
