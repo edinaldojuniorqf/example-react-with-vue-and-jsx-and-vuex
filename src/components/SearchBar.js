@@ -9,25 +9,22 @@ export default {
       this.inStockChange(e.target.checked)
     }
   },
-
+  
   render() {
-      return (
-        <form>
-          <input type="text" placeholder="Search..." value={this.filterText}
-            onInput={this.handleFilterTextInput}
-          />
-          <p>
-            <label>
-              <input
-                type="checkbox"
-                checked={this.inStockOnly}
-                onChange={this.handleInStockChange}
-              />
-              {' '}
-              Only show products in stock
-            </label>
-          </p>
-        </form>
-      );
+    return (
+      <form>
+        <input type="text" placeholder="Search..." value={this.filterText}
+          onInput={this.handleFilterTextInput}
+        />
+        <p>
+          <label>
+            <input type="checkbox" checked={this.inStockOnly}
+              onChange={this.handleInStockChange} />
+            {' '}
+            Only show products in stock
+          </label>
+        </p>
+      </form>
+    );
   }
 }

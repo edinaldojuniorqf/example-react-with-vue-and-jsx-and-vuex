@@ -30,7 +30,8 @@ export default {
             inStockChange={this.handleInStockChange}
           />
           
-          <ProductTable products={this.products}
+          <ProductTable
+            products={this.products}
             filterText={this.filterText}
             inStockOnly={this.inStockOnly} />
         </div>
